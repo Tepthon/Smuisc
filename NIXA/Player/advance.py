@@ -32,11 +32,11 @@ async def alive(event):
                                   caption=DEADLY,
                                   buttons=[
         [
-        Button.url("مطور السورس", "https://t.me/QABNADLIB"),
-        Button.url("قناة السورس", "https://t.me/VFF35")
+        Button.url("مطور السورس", "https://t.me/P17_12"),
+        Button.url("قناة السورس", "httpa://t.me/Tepthon")
         ],
         [
-        Button.url("قروب الدعم", "https://t.me/faqek")
+        Button.url("كروب الدعم", "https://t.me/Tepthon_Support")
         ]
         ]
         )
