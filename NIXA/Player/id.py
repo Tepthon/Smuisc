@@ -2,7 +2,7 @@ from NIXA.main import bot
 from pyrogram import filters
 
 
-@bot.on_message(filters.command('id'))
+@bot.on_message(filters.command('ايدي'))
 def ids(_, message):
     reply = message.reply_to_message
     if reply:
@@ -11,5 +11,5 @@ def ids(_, message):
         )
     else:
         message.reply(
-            f"**ʏᴏᴜʀ ɪᴅ**: `{message.from_user.id}`\n**ايدي المجموعة**: `{message.chat.id}`"
+            f"**ايديك**: `{message.from_user.id}`\n**ايدي المجموعة**: `{message.chat.id}`"
         )
