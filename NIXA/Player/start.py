@@ -36,19 +36,19 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{START_PIC}",
-        caption=f"""**اهلا بك عزيزي  
-انا بوت مختص في تشغيل الاغاني في مجموعتك او قناتك في المكالمات الصوتية
+        caption=f"""**هلا حبيب 
+يمكنك تشغيل الاغاني بإستخدامي في المكالمات الصوتية
 **""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " اضفني إلى مجموعتك ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                        "اضفني الى مجموعتك ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "الاوامر 🖤", url=f"https://telegra.ph/%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%B3%D9%88%D8%B1%D8%B3-%D8%AA%D9%8A%D8%A8%D8%AB%D9%88%D9%86-06-23"
+                        "📜|الاوامر", url=f"https://telegra.ph/%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%B3%D9%88%D8%B1%D8%B3-%D8%AA%D9%8A%D8%A8%D8%AB%D9%88%D9%86-06-23"
                     ),
                     InlineKeyboardButton(
                         "", url="https://t.me/Simple_Mundaa"
@@ -56,10 +56,10 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "السورس 🌐", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        " 🌐|السورس", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "كروب الدعم 🎤", url=f"https://t.me/{GROUP_SUPPORT}"
+                        " ❓|كروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
                     )
                 ]
                 
@@ -68,32 +68,32 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "/stats"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["السورس", "سورس"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/53f584fb963002f995fdb.jpg",
-        caption=f"""شكرا لك لإضافتي إلى مجموعتك.""",
+        photo=f"https://telegra.ph/file/2f6762e96eab0a1ef3644.jpg",
+        caption=f"""اهلا بك في سورس تيبثون افضل السورسات على الاطلاق التنصيبات مجانيه انضم للقناة لكي تنصب بوتك الخاص ام اكتب المبرمج لتنصيب مدفوع.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🥇 قناة السورس 🥇", url=f"https://t.me/Tepthon")
+                        " 🖥️|قناة السورس", url=f"https://t.me/Tepthon")
                 ]
             ]
         ),
     )
 
 
-@Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["المبرمج", "مبرمج"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/be2483b412525f88b7baf.jpg",
-        caption=f"""لتنصيب بوت راسل مطور السورس""",
+        photo=f"https://telegra.ph/file/5dc2d9bcb1ff3adcb3313.jpg",
+        caption=f"""اهلا بك يمكنك التواصل مع محمد تيبثون الان""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝐷𝐸𝑉 𝑀𝑂𝐻𝐴𝑀𝑀𝐴𝐷 𝅘𝅥𝅯.", url=f"https://t.me/P17_12")
+                        "𝐷𝐸𝑉 𝑀𝑂𝐻𝐴𝑀𝑀𝐴𝐷 𝅘𝅥𝅯", url=f"https://t.me/P17_12")
                 ]
             ]
         ),
